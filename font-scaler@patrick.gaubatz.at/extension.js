@@ -47,7 +47,7 @@ const FontScaler = new Lang.Class({
     this.actor.connect('button-press-event', Lang.bind(this, this.toggle))
   },
   toggle: function () {
-    const value = this.settings.get_double(KEY) === 1 ? 1.3 : 1
+    const value = this.settings.get_double(KEY) === 1 ? 1.5 : 1
     this.settings.set_double(KEY, value)
   }
 })
